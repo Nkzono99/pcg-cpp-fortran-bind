@@ -1,0 +1,3 @@
+This fork adds Fortran ISO_C_BINDING wrappers (pcg64_wrap).
+Original project: pcg-cpp by Melissa O'Neill (MIT OR Apache-2.0).
+This fork chooses to distribute under Apache License, Version 2.0.
