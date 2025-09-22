@@ -79,7 +79,7 @@ pcg-cpp-fortran-bind = { git = "https://github.com/Nkzono99/pcg-cpp-fortran-bind
 Then in Fortran:
 
 ```fortran
-use pcg64_bindings   ! or the chosen module name
+use m_pcg64_bind
 ```
 
 This gives access to `pcg64_create`, `pcg64_destroy`, `pcg64_random_u32`,
