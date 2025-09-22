@@ -1,0 +1,25 @@
+name = "pcg-cpp"
+version = "0.1.0"
+license = "license"
+author = "Nkzono99"
+maintainer = "j-nakazono@stu.kobe-u.ac.jp"
+copyright = """
+Copyright (c) 2014-2017 Melissa O'Neill and PCG Project contributors
+Copyright (c) 2025 Jin Nakazono
+"""
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+module-naming = false
+
+[install]
+library = true
+test = true
+
+[fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
+
