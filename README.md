@@ -50,3 +50,37 @@ The directories are arranged as follows:
   shorter, less scary-looking names.
 * `sample` -- sample code, some similar to the code in `test-high` but more 
   human readable, some other examples too
+
+---
+
+## Fortran Package Manager (fpm) Support
+
+This fork also provides **Fortran bindings for PCG64** via ISO\_C\_BINDING, and
+can be built or used as a dependency with [fpm](https://fpm.fortran-lang.org/).
+
+### Install and run tests
+
+```bash
+fpm test
+````
+
+This will build the C++ wrapper, the Fortran bindings, and run the basic tests
+under `test/`.
+
+### Use as a dependency
+
+In your project’s `fpm.toml`, add:
+
+```toml
+[dependencies]
+pcg-cpp-fortran-bind = { git = "https://github.com/Nkzono99/pcg-cpp-fortran-bind" }
+```
+
+Then in Fortran:
+
+```fortran
+use pcg64_bindings   ! or the chosen module name
+```
+
+This gives access to `pcg64_create`, `pcg64_destroy`, `pcg64_random_u32`,
+`pcg64_random_double53`, and `pcg64_advance`.
