@@ -1,4 +1,4 @@
-name = "pcg-cpp"
+name = "pcg-cpp-fortran-bind"
 version = "0.1.0"
 license = "license"
 author = "Nkzono99"
