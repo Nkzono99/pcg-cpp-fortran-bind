@@ -1,6 +1,9 @@
 SPDXVersion: SPDX-2.1
 DataLicense: CC0-1.0
-PackageName: pcg-cpp
+PackageName: pcg-cpp-fortran-bind
 PackageOriginator: Melissa O'Neill <oneill@pcg-random.org>
-PackageHomePage: http://www.pcg-random.org
-PackageLicenseDeclared: (MIT OR Apache-2.0)
+PackageHomePage: https://github.com/Nkzono99/pcg-cpp-fortran-bind
+PackageLicenseDeclared: Apache-2.0
+PackageCopyrightText: Copyright (c) 2014-2017 Melissa O'Neill and PCG Project contributors
+PackageCopyrightText: Copyright (c) 2025 Jin Nakazono
+PackageComment: This fork adds Fortran ISO_C_BINDING wrappers (pcg64_wrap).
